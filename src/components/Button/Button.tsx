@@ -1,25 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-interface Props {
+export interface ButtonProps {
   children: React.ReactNode;
-  className: string;
-  style: React.CSSProperties;
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: Function;
+  type?: 'button' | 'submit' | 'reset' | undefined;
 }
 
-type DefaultProps = Pick<Props, 'style' | 'className'>;
-
-export default class Button extends Component<Props> {
-  static defaultProps: DefaultProps = {
-    style: {},
-    className: '',
-  };
-
-  render() {
-    const { children, className, style } = this.props;
-    return (
-      <div className={className} style={style}>
-        <button>{children}</button>
-      </div>
-    );
-  }
+export default function Button({ className = 'pv2 ph3 ba b--black-10', style = {}, onClick, children, type = 'button' }: ButtonProps) {
+  return (
+    <button type={type} onClick={() => onClick && onClick()} className={className} style={style}>
+      {children}
+    </button>
+  );
 }

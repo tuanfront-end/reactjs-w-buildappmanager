@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+a,
+input,
+textarea,
+select {
+  outline: none;
+}
+
+h1,
+.f-h1 {
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h1,
+  .f-h1 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h1,
+  .f-h1 {
+    font-size: 4.2rem;
+  }
+}
+
+h2,
+.f-h2 {
+  font-size: 2.4rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h2,
+  .f-h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h2,
+  .f-h2 {
+    font-size: 3.6rem;
+  }
+}
+
+h3,
+.f-h3 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h3,
+  .f-h3 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h3,
+  .f-h3 {
+    font-size: 2.4rem;
+  }
+}
+
+h4,
+.f-h4 {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h4,
+  .f-h4 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h4,
+  .f-h4 {
+    font-size: 2.1rem;
+  }
+}
+
+h5,
+.f-h5 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h5,
+  .f-h5 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h5,
+  .f-h5 {
+    font-size: 2rem;
+  }
+}
+
+h6,
+.f-h6 {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h6,
+  .f-h6 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h6,
+  .f-h6 {
+    font-size: 1.5rem;
+  }
+}
+
+h1,
+.f-h1 {
+  line-height: 1.17;
+}
+
+h2,
+.f-h2 {
+  line-height: 1.11;
+}
+
+h3,
+.f-h3,
+h4,
+.f-h4 {
+  line-height: 1.33;
+}
+
+h1,
+.f-h1,
+h2,
+.f-h2,
+h3,
+.f-h3,
+h4,
+.f-h4,
+h5,
+.f-h5,
+h6,
+.f-h6 {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 a,
+.f-h1 a,
+h2 a,
+.f-h2 a,
+h3 a,
+.f-h3 a,
+h4 a,
+.f-h4 a,
+h5 a,
+.f-h5 a,
+h6 a,
+.f-h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 a:hover,
+.f-h1 a:hover,
+h2 a:hover,
+.f-h2 a:hover,
+h3 a:hover,
+.f-h3 a:hover,
+h4 a:hover,
+.f-h4 a:hover,
+h5 a:hover,
+.f-h5 a:hover,
+h6 a:hover,
+.f-h6 a:hover {
+  text-decoration: none;
+}
+
+h1,
+.f-h1,
+h2,
+.f-h2,
+h3,
+.f-h3 {
+  margin-top: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h1,
+  .f-h1,
+  h2,
+  .f-h2,
+  h3,
+  .f-h3 {
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h1,
+  .f-h1,
+  h2,
+  .f-h2,
+  h3,
+  .f-h3 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+h4,
+.f-h4,
+h5,
+.f-h5,
+h6,
+.f-h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  h4,
+  .f-h4,
+  h5,
+  .f-h5,
+  h6,
+  .f-h6 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (min-width: 993px) {
+  h4,
+  .f-h4,
+  h5,
+  .f-h5,
+  h6,
+  .f-h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}

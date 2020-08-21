@@ -1,7 +1,9 @@
-import { todolist } from 'containers/HomePage/reducers/reducerTodolist';
+import homePage from 'containers/HomePage/reducers/reducers';
+import header from 'containers/Header/reducers/reducers';
 
 const reducers = {
-  todolist,
+  ...homePage,
+  ...header,
 };
 
 export default reducers;

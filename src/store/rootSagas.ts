@@ -1,7 +1,8 @@
 import { all, call, spawn, delay } from 'redux-saga/effects';
 import sagaHomePage from 'containers/HomePage/sagas/sagaHomePage';
+import sagaHeader from 'containers/Header/sagas/sagaHeader';
 
-const sagas = [...sagaHomePage];
+const sagas = [...sagaHomePage, ...sagaHeader];
 
 // https://github.com/redux-saga/redux-saga/issues/760#issuecomment-273737022
 const makeRestartable = (saga: any) => {

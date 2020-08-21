@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Header from 'containers/Header/Header';
 
 const HomePage = lazy(() => import(/* webpackChunkName: "HomePage" */ 'containers/HomePage/HomePage'));
 const AboutPage = lazy(() => import(/* webpackChunkName: "AboutPage" */ 'containers/AboutPage/AboutPage'));
@@ -9,8 +10,7 @@ const Routes = () => {
   return (
     <BrowserRouter>
       <header>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Header />
       </header>
       <main>
         <Switch>
